@@ -4,27 +4,15 @@
 Este projeto implementa um chatbot interativo que responde perguntas baseado exclusivamente no conteúdo de arquivos PDF. Desenvolvido para auxiliar estudantes e pesquisadores na análise de múltiplos documentos científicos.
 
 ## 🏗️ Arquitetura
-chatbot-pdf-rag/
-│
-├── .gitignore
-├── README.md
-├── app.py
-├── requirements.txt
-│
-├── 📁 assets/
-│   ├── print-app.png (corrigido)
-│   └── print-experimentos.png (corrigido)
-│
-├── 📁 inputs/
-│   └── (seus PDFs)
-│
-├── 📁 notebooks/
-│   └── experimentos.ipynb
-│
-└── 📁 src/
-    ├── chatbot.py
-    ├── pdf_processor.py
-    └── vector_store.py
+![Estrutura do Projeto](assets/arquitetura.png)
+
+| Camada | Tecnologia | Função |
+|--------|------------|--------|
+| 🖥️ Frontend | Streamlit | Interface do chat |
+| ⚙️ Processamento | PyPDF2 + LangChain | Extração e chunking |
+| 🔢 Embeddings | Sentence-Transformers | Vetorização |
+| 🗄️ Vector Store | ChromaDB | Armazenamento |
+| 🤖 LLM | Ollama (Mistral) | Geração de respostas |
 
 ## 🚀 Como Executar
 1. Clone o repositório
